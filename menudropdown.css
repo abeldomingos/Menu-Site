@@ -1,0 +1,62 @@
+/*Parametros Principal Do Menu*/
+.dropdown-menu{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    width: 50%;
+   
+}
+/*Parametros Da Largura e altura Borda*/
+.dropdown-menu li{
+   width: 150px;
+   height: 50px;
+   list-style: none;
+   
+  
+}
+/*Parametros Da Borda Do Menu*/
+.dropdown-menu a{
+    display: block;
+    background-color: black;
+    width: 79%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /*Pode sair*/
+    transition: all .2s linear;
+    border-radius: 5px;
+}
+/*Efeito do menu*/
+.dropdown-menu li:hover > a{
+    background-color: #FBB023 ;
+    color: black;
+}
+/*Efeito do submenu*/
+.dropdown-menu li:hover > .dropdown-submenu{
+   display: block;
+}
+/*Definir margem e ocultar o submenu*/
+.dropdown-submenu{
+    margin-top: 1px;
+    display: none;
+}
+/*Parametros do submenu*/
+.dropdown-submenu a{
+    background-color: #00000080;
+    width: 150%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px; /*pode por 20px*/
+    font-size:  .8rem;
+    border-left: 8px solid transparent;
+}
+
+/*Efeito do submenu*/
+.dropdown-submenu li:hover > a{
+    border-left: 8px solid black;
+}
+
